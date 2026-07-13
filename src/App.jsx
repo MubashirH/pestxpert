@@ -6,6 +6,7 @@ import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import logo from './assets/logo.jpeg';
 import bannerImage from './assets/bannerwpeg.webp';
+import mobileBannerImage from './assets/mobile-banner.webp';
 
 const Navbar = () => {
   return (
@@ -62,7 +63,7 @@ const Hero = () => {
               </h1>
               {/* Mobile-Only Illustration */}
               <div className="block lg:hidden flex-shrink-0 w-24">
-                <img src="/src/assets/mobile-banner.png" alt="Pest Control Mobile" className="w-full h-auto" />
+                <img src={mobileBannerImage} alt="Pest Control Mobile" className="w-full h-auto" />
               </div>
             </div>
             <p className="text-lg md:text-xl text-cream/80 mb-10 max-w-xl font-medium">
