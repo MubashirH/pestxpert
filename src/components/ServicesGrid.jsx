@@ -1,77 +1,53 @@
 import React from 'react';
+import termiteIcon from '../assets/icons/termite.png';
+import cockroachIcon from '../assets/icons/Cockroach.png';
+import rodentIcon from '../assets/icons/Rodent.png';
+import antIcon from '../assets/icons/Ant.png';
+import mosquitoIcon from '../assets/icons/Mosquito.png';
+import flyIcon from '../assets/icons/Fly.png';
+import bedBugIcon from '../assets/icons/Bed Bug.png';
+import snakeIcon from '../assets/icons/Snake.png';
 
 const services = [
   {
     name: 'Termite Control',
     description: 'Protects your property from termite damage.',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-      </svg>
-    ),
+    icon: termiteIcon,
   },
   {
     name: 'Cockroach Control',
     description: 'Eliminates cockroaches and prevents re-infestation.',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4" />
-      </svg>
-    ),
+    icon: cockroachIcon,
   },
   {
     name: 'Rodent Control',
     description: 'Keeps your space rodent-free and safe.',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-      </svg>
-    ),
+    icon: rodentIcon,
   },
   {
     name: 'Ant Control',
     description: 'Effective solutions for ant problems.',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7" />
-      </svg>
-    ),
+    icon: antIcon,
   },
   {
     name: 'Mosquito Control',
     description: 'Reduces mosquitoes and prevents diseases.',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-      </svg>
-    ),
+    icon: mosquitoIcon,
   },
   {
     name: 'Fly Control',
     description: 'Controls flies and keeps hygiene intact.',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 15a4 4 0 004 4h9a5 5 0 10-.1-9.999 5.002 5.002 0 10-9.78 2.096A4.001 4.001 0 003 15z" />
-      </svg>
-    ),
+    icon: flyIcon,
   },
   {
     name: 'Bed Bug Control',
     description: 'Eliminates bed bugs for restful living.',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
-      </svg>
-    ),
+    icon: bedBugIcon,
   },
   {
     name: 'Snake Control',
     description: 'Safe and professional snake removal.',
-    icon: (
-      <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
-      </svg>
-    ),
+    icon: snakeIcon,
   },
 ];
 
@@ -103,8 +79,8 @@ const ServicesGrid = () => {
                 className="group bg-white p-8 rounded-xl border border-charcoal/10 hover:border-gold hover:shadow-xl hover:-translate-y-1 transition-all duration-300 flex flex-col h-full"
               >
                 {/* Icon Container */}
-                <div className="w-12 h-12 bg-gold/20 text-charcoal rounded-full flex items-center justify-center mb-6 group-hover:bg-gold transition-colors duration-300">
-                  {service.icon}
+                <div className="w-12 h-12 bg-gold/20 rounded-full flex items-center justify-center mb-6 group-hover:bg-gold transition-colors duration-300">
+                  <img src={service.icon} alt={service.name} className="w-6 h-6 object-contain" />
                 </div>
 
                 {/* Content */}
@@ -135,3 +111,4 @@ const ServicesGrid = () => {
 };
 
 export default ServicesGrid;
+
