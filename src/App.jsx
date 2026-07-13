@@ -6,7 +6,7 @@ import Footer from './components/Footer';
 import FloatingWhatsApp from './components/FloatingWhatsApp';
 import logo from './assets/logo.jpeg';
 import bannerImage from './assets/bannerwpeg.webp';
-import mobileBannerImage from './assets/mobile-banner.webp';
+import mobileBannerImage from './assets/mobile-banner.png';
 
 const Navbar = () => {
   return (
