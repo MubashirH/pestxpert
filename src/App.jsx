@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 import ServicesGrid from './components/ServicesGrid';
+import logo from './assets/logo.jpeg';
+import bannerImage from './assets/bannerwpeg.webp';
 
 const Navbar = () => {
   return (
@@ -9,7 +11,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-16 sm:h-20">
           {/* Logo */}
           <div className="flex-shrink-0 flex items-center">
-            <img src="/src/assets/logo.jpeg" alt="Pest Xpert Logo" className="h-10 sm:h-12 w-auto rounded-lg" />
+            <img src={logo} alt="Pest Xpert Logo" className="h-10 sm:h-12 w-auto rounded-lg" />
           </div>
 
           {/* CTA Button */}
@@ -90,7 +92,7 @@ const Hero = () => {
           <div className="hidden lg:block relative">
             <div className="aspect-square bg-gradient-to-br from-gold/20 to-transparent rounded-3xl overflow-hidden border border-white/10">
               <div className="absolute inset-0 flex items-center justify-center">
-                <img src="src/assets/bannerwpeg.webp" alt="Pest Control" className="w-full h-full object-cover opacity-80" />
+                <img src={bannerImage} alt="Pest Control" className="w-full h-full object-cover opacity-80" />
               </div>
             </div>
           </div>
