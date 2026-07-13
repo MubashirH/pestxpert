@@ -79,7 +79,7 @@ const Hero = () => {
                 Call Us Today
               </a>
               <a
-                href="https://wa.me/9916407740"
+                href="https://wa.me/+919916407740"
                 className="border-2 border-cream/30 text-cream px-8 py-4 rounded-lg font-bold text-lg text-center hover:bg-cream/10 transition-colors"
               >
                 Book Inspection
