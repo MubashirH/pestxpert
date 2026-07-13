@@ -54,11 +54,17 @@ const Hero = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight mb-6 tracking-tight">
-              Complete <br />
-              <span className="text-gold">Pest Control</span> <br />
-              Solutions
-            </h1>
+            <div className="flex flex-row items-center justify-between gap-3 mb-6">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-tight tracking-tight">
+                Complete <br />
+                <span className="text-gold">Pest Control</span> <br />
+                Solutions
+              </h1>
+              {/* Mobile-Only Illustration */}
+              <div className="block lg:hidden flex-shrink-0 w-24">
+                <img src="/src/assets/mobile-banner.png" alt="Pest Control Mobile" className="w-full h-auto" />
+              </div>
+            </div>
             <p className="text-lg md:text-xl text-cream/80 mb-10 max-w-xl font-medium">
               We Protect What Matters — Your Space. Our Care. Pest Free Everywhere.
             </p>
@@ -66,13 +72,13 @@ const Hero = () => {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <a
-                href="tel:9845355690"
+                href="tel:9916407740"
                 className="bg-gold text-charcoal px-8 py-4 rounded-lg font-bold text-lg text-center hover:bg-gold/90 transition-colors shadow-xl shadow-gold/10"
               >
                 Call Us Today
               </a>
               <a
-                href="https://wa.me/9845355690"
+                href="https://wa.me/9916407740"
                 className="border-2 border-cream/30 text-cream px-8 py-4 rounded-lg font-bold text-lg text-center hover:bg-cream/10 transition-colors"
               >
                 Book Inspection

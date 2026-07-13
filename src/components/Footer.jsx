@@ -19,7 +19,7 @@ const Footer = () => {
             <a href="tel:9916407740" className="hover:text-gold transition-colors" aria-label="Call Pest Xpert at 99164 07740">
               9916407740
             </a>
-            {/* <a href="tel:9845355690" className="hover:text-gold transition-colors" aria-label="Call Pest Xpert at 98453 55690">
+            {/* <a href="tel:9916407740" className="hover:text-gold transition-colors" aria-label="Call Pest Xpert at 98453 55690">
               98453 55690
             </a> */}
           </div>

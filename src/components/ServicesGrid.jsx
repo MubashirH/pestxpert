@@ -71,7 +71,7 @@ const ServicesGrid = () => {
             const whatsappMessage = encodeURIComponent(
               `Hello Pest Xpert, I need inquiries regarding ${service.name}.`
             );
-            const whatsappLink = `https://wa.me/919845355690?text=${whatsappMessage}`;
+            const whatsappLink = `https://wa.me/919916407740?text=${whatsappMessage}`;
 
             return (
               <div
